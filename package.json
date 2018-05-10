@@ -2,13 +2,22 @@
     "name": "script-result-info",
     "displayName": "Script Result Info",
     "description": "Runs a script in shell and puts the result in the statusBar",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "icon": "images/icon.png",
+    "license": "SEE FILE LICENSE",
     "publisher": "emilioidk",
     "engines": {
         "vscode": "^1.23.0"
     },
     "categories": [
         "Other"
+    ],
+    "keywords": [
+        "safeex",
+        "command",
+        "script",
+        "shell",
+        "status bar"
     ],
     "activationEvents": [
         "onCommand:extension.runCommand"
