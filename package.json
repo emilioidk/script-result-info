@@ -4,6 +4,10 @@
     "description": "Runs a script in shell and puts the result in the statusBar",
     "version": "1.0.0",
     "icon": "images/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/emilioidk/script-result-info"
+    },
     "license": "SEE FILE LICENSE",
     "publisher": "emilioidk",
     "engines": {
