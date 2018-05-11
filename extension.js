@@ -16,6 +16,8 @@ function activate(context) {
         });
     }
 
+    runCommandAndUpdateStatusBarItem();
+
     let disposable = vscode.commands.registerCommand(config.statusBarItem.command, runCommandAndUpdateStatusBarItem);
 
     context.subscriptions.push(statusBarItem);
