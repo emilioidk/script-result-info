@@ -16,3 +16,13 @@ Initial release. User can only run custom command `git describe --dirty="-$USER"
 ### Added
 - Added all initial files
 - Added a whole bunch of bugs (probably)
+
+
+## [1.0.1] 05-11-2018
+
+### Release notes
+Added an important quality: run the command when the extension is activated.
+
+### Added
+- Run command during extension activation
+- Documentation on how to use the extension

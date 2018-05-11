@@ -2,6 +2,13 @@
 
 This Visual Studio Code extension will execute a command in the shell and show the result in the status bar.
 
+## How to use
+
+Once installed, open your command actions (CTRL + SHIFT + P) and run `Script Result Info: Run command`. If the result is
+good, you will see the status bar item with the info. Otherwise an error message will be shown.
+
+Clicking on the status bar item for this extension will re run the command.
+
 ## Features
 
 Currently the extension runs the following git command from the workspace root path
@@ -37,3 +44,7 @@ Checkout the [cangelog](CHANGELOG.md) for more details.
 ### 1.0.0
 
 Initial release. User can only run custom command `git describe --dirty="-$USER"` and no configurations are yet permitted.
+
+### 1.0.1
+
+Added an important quality: run the command when the extension is activated.
