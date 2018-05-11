@@ -2,7 +2,7 @@
     "name": "script-result-info",
     "displayName": "Script Result Info",
     "description": "Runs a script in shell and puts the result in the statusBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
