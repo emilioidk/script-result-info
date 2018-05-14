@@ -1,24 +1,25 @@
 /* global suite, test */
 
-//
-// Note: This example test is leveraging the Mocha test framework.
-// Please refer to their documentation on https://mochajs.org/ for help.
-//
-
-// The module 'assert' provides assertion methods from node
 const assert = require('assert');
+const vscode = require('vscode');
+const RunCommand = require('../src/runCommand/RunCommand');
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-// const vscode = require('vscode');
-// const myExtension = require('../extension');
+suite("RunCommand", function () {
+    const config = {
+        options: [],
+        cwd: vscode.workspace.workspaceFolders ? vscode.workspace.workspaceFolders[0].uri.path : "~",
+        command: "echo Hello"
+    };
 
-// Defines a Mocha test suite to group tests of similar kind together
-suite("Extension Tests", function() {
+    test("it creates RunCommand instances", () => {
+        new RunCommand(config);
+    });
 
-    // Defines a Mocha unit test
-    test("Something 1", function() {
-        assert.equal(-1, [1, 2, 3].indexOf(5));
-        assert.equal(-1, [1, 2, 3].indexOf(0));
+    test("it runs the command provided and returns Hello\\n", function (done) {
+        const runCommand = new RunCommand(config);
+        runCommand.runCommand().then(function (result) {
+            assert.equal(result, "Hello\n");
+            done();
+        });
     });
 });
