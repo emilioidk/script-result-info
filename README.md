@@ -20,6 +20,7 @@ git describe --dirty="-$USER"
 The result looks as follows
 
 ![git describe command](images/extension.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info?ref=badge_shield)
 
 Clicking on the status bar item will re run the command.
 
@@ -48,3 +49,7 @@ Initial release. User can only run custom command `git describe --dirty="-$USER"
 ### 1.0.1
 
 Added an important quality: run the command when the extension is activated.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info?ref=badge_large)
