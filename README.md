@@ -1,4 +1,5 @@
 # script-result-info
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info?ref=badge_shield)
 
 This Visual Studio Code extension will execute a command in the shell and show the result in the status bar.
 
@@ -20,7 +21,6 @@ git describe --dirty="-$USER"
 The result looks as follows
 
 ![git describe command](images/extension.png)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Femilioidk%2Fscript-result-info?ref=badge_shield)
 
 Clicking on the status bar item will re run the command.
 
